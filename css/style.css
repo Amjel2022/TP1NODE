@@ -1,3 +1,4 @@
+/* ******************** "RESET" ************************** */
 * {
     margin: 0;
     padding: 0;
@@ -12,13 +13,57 @@ a {
     text-decoration: none;
 }
 
+/* ***************************************************** */
+
+/* PALETA DE COLORES */
+:root {
+
+}
+
+/* ***************************************************** */
 
 body {
     background-color: black;
      
 }
 
+/* ---------------------------------- */
+/* -------- HEADER Y NAV ------------ */
+/* ---------------------------------- */
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 0 0 0 30px;
+    justify-content: flex-start;
+}
+
+.titulo_logo {
+    display: flex;
+    justify-content: space-between;
+}
+
 h1 {
     color: azure;
-    
+    font-family: "Plus Jakarta Sans", sans-serif;  
+    margin-left: 20px;
 }
+
+nav > ul {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* -------- MENÚ DESPLEGABLE -------- */
+/* ---------------------------------- */
+
