@@ -11,25 +11,37 @@ ul, ol {
 
 a {
     text-decoration: none;
+    color: var(--blanco);
 }
 
 /* ***************************************************** */
 
 /* PALETA DE COLORES */
 :root {
-
+    --blanco: #fcfcf7;
+    --azul: #6266f5;
+    --verde_claro: #67d7e7;
+    --rojo: #ff5a82;
+    --celeste: #4a85fa;
+    --gris: #2c2c2c;
+    --negro: #1b1b1b;
 }
 
 /* ***************************************************** */
 
 body {
-    background-color: black;
+    background-color: var(--blanco);
      
 }
 
 /* ---------------------------------- */
 /* -------- HEADER Y NAV ------------ */
 /* ---------------------------------- */
+
+header {
+    border: 3px solid var(negro);
+    background-color: var(--gris);
+}
 
 .encabezado {
     display: flex;
@@ -43,9 +55,9 @@ body {
 }
 
 .logo {
-    width: 100px;
+    width: 180px;
     height: auto;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 50px;
     justify-content: flex-start;
 }
 
@@ -54,14 +66,10 @@ body {
     justify-content: space-between;
 }
 
-h1 {
-    color: azure;
-    font-family: "Plus Jakarta Sans", sans-serif;  
-    margin-left: 20px;
-}
 
 nav > ul {
     font-family: "Montserrat", sans-serif;
+    
 }
 
 /* -------- MENÚ DESPLEGABLE -------- */
