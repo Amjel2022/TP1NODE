@@ -7,11 +7,12 @@
 
 ul, ol {
     list-style-type: none;
+    
 }
 
-a {
+a, li {
     text-decoration: none;
-    color: var(--blanco);
+    
 }
 
 /* ***************************************************** */
@@ -41,6 +42,7 @@ body {
 header {
     border: 3px solid var(negro);
     background-color: var(--gris);
+    border-radius: 0 0 8px 8px;
 }
 
 .encabezado {
@@ -49,15 +51,29 @@ header {
     align-items: center;
 }
 
+/* ************* Navbar Sticky!! ************** */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+/* ******************************************** */
+
 .menu {
     display: flex;
     justify-content: space-between;
+    
+}
+
+.menu a {
+    color: var(--blanco);
 }
 
 .logo {
-    width: 180px;
-    height: auto;
-    margin: 0 0 0 50px;
+    width: 130px;
+    height: 130px;
+    
+    margin: 0 0 0 40px;
     justify-content: flex-start;
 }
 
@@ -66,12 +82,93 @@ header {
     justify-content: space-between;
 }
 
-
 nav > ul {
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
+}
+
+.menu2 {
+    padding: 40px;
+    color: var(--blanco);
+    font-size: 18px;
 }
 
 /* -------- MENÚ DESPLEGABLE -------- */
 /* ---------------------------------- */
 
+.submenu1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    width: 240px;
+    height: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    border-radius: 5px;
+    margin: 8px 0 0 -60px;
+    padding-left: 20px;
+}
+
+.submenu2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    width: 180px;
+    height: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    border-radius: 5px;
+    margin: 5px 10px 5px 0px;
+    padding-left: 20px;
+}
+
+.menu li:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+.menu li a:hover {
+    background-color: var(--blanco);
+    color: var(--azul);
+}
+
+/* desplegable */
+.menu li:hover .submenu1 {
+    visibility: visible;
+    opacity: 1;
+    background: var(--negro);
+    color: var(--blanco);
+}
+
+.menu li:hover .submenu2 {
+    visibility: visible;
+    opacity: 1;
+    background: var(--negro);
+    color: var(--blanco);
+}
+/* fin menu desplegable */
+
+.submenu1 li {
+    padding: 20px 10px 20px 10px;
+}
+
+.submenu2 li {
+    padding: 20px 10px 20px 10px; 
+}
+
+.submenu1 a {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.submenu2 a {
+    padding: 5px;
+    border-radius: 5px;
+}
