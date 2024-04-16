@@ -42,13 +42,14 @@ body {
 header {
     border: 3px solid var(negro);
     background-color: var(--gris);
-    border-radius: 0 0 8px 8px;
 }
 
 .encabezado {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 80px;
 }
 
 /* ************* Navbar Sticky!! ************** */
@@ -62,7 +63,7 @@ header {
 .menu {
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 .menu a {
@@ -70,10 +71,10 @@ header {
 }
 
 .logo {
-    width: 130px;
-    height: 130px;
-    
-    margin: 0 0 0 40px;
+    width: 135px;
+    height: auto;
+    align-items: center;
+    margin: 0 0 0 60px;
     justify-content: flex-start;
 }
 
@@ -91,9 +92,10 @@ nav > ul {
 }
 
 .menu2 {
-    padding: 40px;
+    padding-left: 40px;
     color: var(--blanco);
     font-size: 18px;
+
 }
 
 /* -------- MENÚ DESPLEGABLE -------- */
@@ -110,7 +112,7 @@ nav > ul {
     opacity: 0;
     transition: opacity 1s;
     border-radius: 5px;
-    margin: 8px 0 0 -60px;
+    margin: 4px 0 0 -60px;
     padding-left: 20px;
 }
 
@@ -125,7 +127,7 @@ nav > ul {
     opacity: 0;
     transition: opacity 1s;
     border-radius: 5px;
-    margin: 5px 10px 5px 0px;
+    margin: 4px 10px 5px 0px;
     padding-left: 20px;
 }
 
@@ -172,3 +174,68 @@ nav > ul {
     padding: 5px;
     border-radius: 5px;
 }
+
+/* ------------- BOTONES ------------ */
+/* ---------------------------------- */
+
+.sesiones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-right: 60px;
+}
+
+/* Botón Inicio de Sesión */
+
+.btn1 {
+    padding: 8px 10px 8px 10px;
+    border-radius: 10px;
+    background: var(--blanco);
+    border: 2px solid var(--gris);
+}
+
+.btn1 a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--negro);
+}
+
+.btn1:hover {
+    background: var(--celeste);
+}
+
+.btn1 a:hover {
+    color: var(--blanco);
+
+}
+
+/* Botón de creación de cuenta */
+
+.btn2 {
+    padding: 8px 10px 8px 10px;
+    border-radius: 10px;
+    background: var(--celeste);
+    border: 2px solid var(--gris);
+}
+
+.btn2 a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.btn2:hover {
+    background: var(--blanco);
+}
+
+.btn2 a:hover {
+    color: var(--negro);
+}
+
+/* 
+página con muestras de botones para desarrollar:
+https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-sitios-web-creados-con-divi/
+*/
