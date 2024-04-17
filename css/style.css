@@ -239,3 +239,46 @@ nav > ul {
 página con muestras de botones para desarrollar:
 https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-sitios-web-creados-con-divi/
 */
+
+
+
+
+/* ******************* FOOTER *************** */
+/* ****************************************** */
+
+footer {
+    width: 100%;
+    height: 230px;
+    background-image: url("../img/ola.svg");
+    position: absolute;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--blanco);
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px auto 15px auto;
+}
+
+.iconos_footer {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: var(--blanco);
+    font-family: "Montserrat", sans-serif;
+} 
