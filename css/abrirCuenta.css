@@ -1,0 +1,36 @@
+/* ******************** "RESET" ************************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style-type: none;
+    
+}
+
+a, li {
+    text-decoration: none;
+    
+}
+
+/* ***************************************************** */
+
+/* PALETA DE COLORES */
+:root {
+    --blanco: #fcfcf7;
+    --azul: #6266f5;
+    --verde_claro: #67d7e7;
+    --rojo: #ff5a82;
+    --celeste: #4a85fa;
+    --gris: #2c2c2c;
+    --negro: #1b1b1b;
+}
+
+/* ***************************************************** */
+
+body {
+    background-color: var(--blanco);
+     
+}
