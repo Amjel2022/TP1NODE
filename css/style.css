@@ -277,11 +277,12 @@ ul {
 }
 
 .redesSociales {
-    gap: 20px;
+    gap: 25px;
 }
 
 .redesSociales a {
-    font-size: 25px;
+    font-size: 25px; 
+    /* tamaño de los iconos en footer */
 }
 
 .navegacionFooter {
