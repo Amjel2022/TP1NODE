@@ -20,18 +20,19 @@ a, li {
 /* PALETA DE COLORES */
 :root {
     --blanco: #fcfcf7;
+    --blanco2: rgb(226, 234, 240);
     --azul: #6266f5;
     --verde_claro: #67d7e7;
     --rojo: #ff5a82;
     --celeste: #4a85fa;
-    --gris: #2c2c2c;
+    --gris: #1a202c;
     --negro: #1b1b1b;
 }
 
 /* ***************************************************** */
 
 body {
-    background: rgb(36, 41, 48);
+    background: var(--blanco2); 
     height: 100%;
     font-family: "Euclid Circular A", "Poppins";
 }
@@ -249,8 +250,12 @@ https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-si
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 100px 30px 10px 30px;
+    gap: 100px 70px;
+    padding: 100px 30px 60px 30px;
+    /* borde container cards */
+    border-radius: 45px;
+    margin: 25px;
+    background: rgba(149, 102, 238, 0.6);
 }
 
 .container .card {
@@ -294,7 +299,7 @@ https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-si
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: fill; /* tamaño de relleno de la imagen en el contenedor */
+    object-fit: scale-down; /* tamaño de relleno de la imagen en el contenedor */
 }
 
 .container .card .contenido {
@@ -332,7 +337,7 @@ https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-si
     display: inline-block;
     padding: 12px 25px;
     background: var(--azul);
-    /* veridicar colores según el patrón de diseño  */
+    /* verificar colores según el patrón de diseño  */
     color: var(--blanco);
     font-weight: 500;
     border-radius: 10px;
@@ -342,7 +347,7 @@ https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-si
     opacity: 0.8;
 }
 
-
+/* FALTA EL DISEÑO RESPONSIVE */
 
 /* ************* Fin de Cards *************** */
 /* ****************************************** */
@@ -361,6 +366,7 @@ footer {
     left: 0;
     bottom: 0;
     color: var(--blanco);
+    margin-top: -60px;
 }
 
 .foorteFondo {
@@ -385,7 +391,7 @@ ul {
 }
 
 .redesSociales a {
-    font-size: 25px; 
+    font-size: 27px; 
     /* tamaño de los iconos en footer */
 }
 
@@ -424,7 +430,7 @@ article {
     align-items: center;
     gap: 30px;
     width: 100%;
-    margin-bottom: -70px;
+    margin-bottom: -110px;
 }
 
 /* *********************************************** */
