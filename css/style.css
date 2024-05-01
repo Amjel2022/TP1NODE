@@ -148,73 +148,6 @@ body {
     width: 36px;
 }
 
-/* ***** NAVBAR RESPONSIVE ***** */
-/* @media (min-width: 800px) {
-    .navbarHambur {
-        display: flex;
-    }
-
-    .navbarItem {
-        --clip: 0;
-        overflow: hidden;
-    }
-
-    .navbarItem--active {
-        --transform: rotate(0);
-        --background: var(--verde_claro)
-    }
-
-    .navbarItem--show {
-        background-color: var(--verde_claro);
-    }
-
-    .navbarLinks {
-        position: fixed;
-        max-width: 400px;
-        width: 100%;
-        top: 70px;
-        bottom: 0;
-        right: 0;
-        background-color: var(--negro);
-        overflow-y: auto;
-        display: grid;
-        grid-auto-rows: max-content;
-        transform: translateX(100%);
-    }
-
-    .navbarLinks--show {
-        transform: unset;
-        width: 100%;
-    }
-
-    .navbarLink {
-        padding: 25px 0;
-        padding-left: 30px;
-        height: auto;
-    }
-
-    .navbarFlecha {
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
-    .navbarDesplegable {
-        display: grid;
-        position: unset;
-        width: 100%;
-        transform: translateY(0);
-        height: 0;
-        transition: height 0.3s;
-    }
-
-    .navbarLink--inside {
-        width: 90%;
-        margin-left: auto;
-        border-left: 1px solid var(--celeste);
-    }
-} */
-
-
 
 /* ------------- BOTONES ------------ */
 /* ---------------------------------- */
@@ -282,24 +215,69 @@ https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-si
 /* ************** FOTO PORTADA ************** */
 /* ****************************************** */
 
-/* Copiar los estilos del container de las cards!!!! */
 .portadaContainer {
-    width: 1350px;
-    height: auto;
-    border: 2px solid rgba(149, 102, 238, 0.6);
-    border-radius: 45px;
-    padding: 30px;
-    margin: 30px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 5px 40px 0;
+    overflow: hidden;
+    /* sombra de la imagen */
+    box-shadow: 5px 8px 12px var(--negro);
 }
 
 .portadaImg {
-    width: 1000px;
+    width: 100%;
     height: auto;
+}
+
+/* Titulo sobre la imagen */
+.portadaTitulo {
+    display: flex;
+    justify-content: space-between;
+    gap: 17px;
+    font-size: 40px;
+    color: var(--negro);
+    font-weight: 1000;
+    /* Posición sobre la imagen */
+    position: absolute;
+    top: 60%;
+    left: 7%;
+}
+
+.portadaTitulo img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;    
+}
+
+/* texto sobre la imagen */
+.portadaContenido p {
+    font-size: 30px;
+    color: var(--negro);
+    font-weight: 700;
+    /* posición del texto sobre imagen */
+    position: absolute;
+    top: 77%;
+    left: 7%;
 
 }
 
+
 /* ******************* CARDS *************** */
 /* ****************************************** */
+
+/* Títulos de sección */
+
+h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0 0 -20px 65px;
+    font-size: 45px;
+    color: var(--negro);
+    font-weight: 900;
+}
+
+/* ****************** */
 
 .container {
     position: relative;
@@ -311,7 +289,7 @@ https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-si
     /* borde container cards */
     border-radius: 45px;
     margin: 25px;
-    background: rgba(149, 102, 238, 0.6);
+    background: rgba(149, 102, 238, 0.4);
 }
 
 .container .card {
@@ -374,7 +352,7 @@ https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-si
     height: 250px;
 }
 
-.container .card .contenido h2 {
+.container .card .contenido h3 {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--negro);
