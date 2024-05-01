@@ -35,56 +35,86 @@
     <!-- Link del icono -->
     <link rel="icon" href="./img/Logos/logo.png">
 
+    <script src="./scripts/navbar.js"></script>
+
 </head>
     <body>
         <!-- ****************** Encabezado y navegación ****************** -->
-        <header class="encabezado">
-            <div class="titulo_logo">
-                <a href="index.html"> <img class="logo" src="./img/Logos/logo.png" alt="logo"> </a>
-            </div>
-            
-            <!-- Menú de navegación Home -->
-            <nav class="navbar">
-                <ul class="menu">
-                  <li>
-                    <a href="index.html" class="menuLink">Home</a>  
-                  </li>  
+        <nav class="menuNav">
+            <section class="navbarContainer">   
+                    <!-- LOGO -->
+                  <div class="navbarLogo">
+                      <a href="index.html"> <img src="./img/Logos/logo.png" alt="Logo"></a>
+                  </div>
                   
-                  <li class="menu2"><a href="##">Para vos </a> 
-                        <ul class="submenu1">
-                            <li> <a href="./pages/paraVos.html">Para vos</a> </li>
-                            <li> <a href="#">Cuenta digital</a> </li>
-                            <li> <a href="#">Tarjeta virtual</a> </li>
-                            <li> <a href="#">Transferencias</a> </li>
-                            <li> <a href="#">Pago de servicios</a> </li>
-                            <li> <a href="#">Retiro de efectivo</a> </li>
-                        </ul>
-                    </li>
-                        
-                    <li class="menu2"><a href="##">Para tu negocio &#129131;</a> 
-                        <ul class="submenu2">
-                            <li> <a href="./pages/paraNegocio.html">Negocios</a> </li>
-                            <li> <a href="#">Ventas</a> </li>
-                            <li> <a href="#">Suscripción</a> </li>
-                            <li> <a href="#">Comercios</a> </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <!-- ************************ -->
-            
-            <!-- Sesiones -->
-            <div class="sesiones">
-                <button class="btn1"> <a href="./pages/inicio_sesion.html">Iniciar sesión</a> </button>
-                <button class="btn2"> <a href="./pages/abrir_cuenta.html">Abrir cuenta gratis</a> </button>
-            </div>
-            <!-- ********* -->
-
-        </header>
+                  <!-- Menú de navegación -->
+                  <ul class="navbarLinks">
+                      <li class="navbarItem">
+                        <a href="index.html" class="navbarLink">Inicio</a>  
+                      </li>  
+                      <!-- Menú desplegable 1 -->
+                      <li class="navbarItem navbarItem--show">
+                          <a href="##" class="navbarLink">Para vos 
+                            <img src="./img/flecha.svg" alt="flecha menu desplegable" class="navbarFlecha">
+                          </a>   
+                          <ul class="navbarDesplegable">
+                              <li class="navbarItem"> <a href="./pages/paraVos.html" class="navbarLink navbarLink--inside">Para vos</a> </li>
+                              <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Cuenta digital</a> </li>
+                              <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Tarjeta virtual</a> </li>
+                              <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Transferencias</a> </li>
+                              <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Pago de servicios</a> </li>
+                              <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Retiro de efectivo</a> </li>
+                          </ul>
+                      </li>
+                      <!-- Menú desplegable 2 -->
+                      <li class="navbarItem navbarItem--show">
+                        <a href="##" class="navbarLink">Para tu negocio 
+                          <img src="./img/flecha.svg" alt="flecha menu desplegable" class="navbarFlecha">
+                        </a> 
+                          <ul class="navbarDesplegable">
+                              <li class="navbarItem"> <a href="./pages/paraNegocio.html" class="navbarLink navbarLink--inside">Negocios</a> </li>
+                              <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Ventas</a> </li>
+                              <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Suscripción</a> </li>
+                              <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Comercios</a> </li>
+                          </ul>
+                      </li>
+                  </ul>
+              <!-- ************************ -->
+              
+              <!-- Sesiones -->
+                <div class="sesiones">
+                    <button class="btn1"> <a href="./pages/inicio_sesion.html">Iniciar sesión</a> </button>
+                    <button class="btn2"> <a href="./pages/abrir_cuenta.html">Abrir cuenta gratis</a> </button>
+                </div>
+              <!-- ********* -->
+              
+              <!-- ****** MENÚ HAMBURGUESA ****** -->
+              <div class="navbarHambur">
+                <img src="./img/menu.svg" alt="Menu" class="navbarImg">
+              </div>
+              <!-- ****************************** -->
+              
+            </section>
+        </nav>
         <!-- ****************** Fin de encabezado y navegación ****************** -->
         
         <!-- ***************** Cuerpo Principal de la página ******************** -->
         <main>
+            <section class="portadaContainer">
+                <!-- foto principal o carousel .... -->
+                <img src="./img/portada2.png" alt="portada" class="portadaImg">
+                <div class="portadaContenido">
+                  <div class="portadaTitulo">
+                      <h1>Pay Solutions</h1>
+                      <img src="./img/Logos/logo.png" alt="Logo">  
+                  </div>
+                  <p>Desde ahora podes hacer más cosas con tu dinero</p>
+                </div>
+            </section>
+            <!-- 
+            letras encima de imagen 
+            https://www.youtube.com/watch?v=QwbNA0jCco4
+           -->
             <section>
                 <div class="container">
                   <!-- ***************** CARD 1 ***************** -->
@@ -246,7 +276,9 @@
               </article>
               <!-- ************************************************ -->
         </footer>
-        
+        <!-- Script de Js para navbar -->
+        <script src="./scripts/navbar.js"></script>
+        <!-- ************************ -->
     </body>
 </html>
 
