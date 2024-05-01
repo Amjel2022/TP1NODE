@@ -52,6 +52,10 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
     font-weight: 600;
+    /* navbar sticky! */
+    position: sticky;
+    top: 0;
+    z-index: 101;
 }
 
 .navbarContainer {
@@ -123,6 +127,13 @@ body {
     background-color: var(--celeste);
 }
 
+/* Tamaño del logo en el navbar */
+.navbarLogo img {
+    width: 140px;
+    height: auto;
+}
+
+/* Menú hamburguesa */
 .navbarHambur {
     height: 100%;
     display: flex;
