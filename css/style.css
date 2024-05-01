@@ -333,7 +333,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: scale-down; /* tamaño de relleno de la imagen en el contenedor */
+    object-fit: cover; /* tamaño de relleno de la imagen en el contenedor */
 }
 
 .container .card .contenido {
@@ -425,6 +425,7 @@ ul {
 }
 
 .redesSociales a {
+    color: var(--blanco);
     font-size: 27px; 
     /* tamaño de los iconos en footer */
 }
