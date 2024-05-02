@@ -7,12 +7,12 @@
 
 ul, ol {
     list-style-type: none;
-    
+
 }
 
 a, li {
     text-decoration: none;
-    
+
 }
 
 /* ***************************************************** */
@@ -20,160 +20,134 @@ a, li {
 /* PALETA DE COLORES */
 :root {
     --blanco: #fcfcf7;
+    --blanco2: rgb(226, 234, 240);
     --azul: #6266f5;
     --verde_claro: #67d7e7;
     --rojo: #ff5a82;
     --celeste: #4a85fa;
-    --gris: #2c2c2c;
+    --gris: #1a202c;
     --negro: #1b1b1b;
 }
 
 /* ***************************************************** */
 
 body {
-    background-color: var(--blanco);
-     
+    background: var(--blanco2); 
+    height: 100%;
+    font-family: "Euclid Circular A", "Poppins";
 }
 
 /* ---------------------------------- */
-/* -------- HEADER Y NAV ------------ */
+/* ------ MENÚ DE NAVEGACIÓN -------- */
 /* ---------------------------------- */
-
-header {
-    border: 3px solid var(negro);
-    background-color: var(--gris);
-}
-
-.encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-}
-
-/* ************* Navbar Sticky!! ************** */
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 99;
-}
-/* ******************************************** */
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu a {
-    color: var(--blanco);
-}
-
-.logo {
-    width: 135px;
-    height: auto;
-    align-items: center;
-    margin: 0 0 0 60px;
-    justify-content: flex-start;
-}
-
-.titulo_logo {
-    display: flex;
-    justify-content: space-between;
-}
-
-nav > ul {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.menu2 {
-    padding-left: 40px;
-    color: var(--blanco);
-    font-size: 18px;
-
-}
 
 /* -------- MENÚ DESPLEGABLE -------- */
 /* ---------------------------------- */
 
-.submenu1 {
+.menuNav {
+    background-color: var(--gris);
+    color: var(--blanco);
+    /* tamaño del navbar */
+    height: 90px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    /* navbar sticky! */
+    position: sticky;
+    top: 0;
+    z-index: 101;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.navbarLinks {
+    height: 100%;
+    transition: transform 0.5s;
+    display: flex;
+}
+
+/* flecha y rotación en el navbar */
+.navbarItem {
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+
+.navbarItem:hover {
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    --transform: rotate(0); 
+}
+/* --------------------------------- */
+
+.navbarLink {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: var(--blanco);
+    padding: 0 30px;
+}
+
+.navbarLink:hover {
+    background-color: var(--celeste);
+}
+
+.navbarFlecha {
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+
+.navbarDesplegable {
     display: flex;
     flex-direction: column;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
     position: absolute;
-    align-items: flex-start;
-    width: 240px;
-    height: auto;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s;
-    border-radius: 5px;
-    margin: 4px 0 0 -60px;
-    padding-left: 20px;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: var(--negro);
 }
 
-.submenu2 {
+.navbarLink--inside {
+    padding: 30px 100px 30px 20px;
+}
+
+.navbarLink--inside:hover {
+    background-color: var(--celeste);
+}
+
+/* Tamaño del logo en el navbar */
+.navbarLogo img {
+    width: 140px;
+    height: auto;
+}
+
+/* Menú hamburguesa */
+.navbarHambur {
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    align-items: flex-start;
-    width: 180px;
-    height: auto;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s;
-    border-radius: 5px;
-    margin: 4px 10px 5px 0px;
-    padding-left: 20px;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
 }
 
-.menu li:hover {
-    transform: scale(1.1);
-    transition: 0.7s;
+.navbarImg {
+    display: block;
+    width: 36px;
 }
 
-.menu li a:hover {
-    background-color: var(--blanco);
-    color: var(--azul);
-}
-
-/* desplegable */
-.menu li:hover .submenu1 {
-    visibility: visible;
-    opacity: 1;
-    background: var(--negro);
-    color: var(--blanco);
-}
-
-.menu li:hover .submenu2 {
-    visibility: visible;
-    opacity: 1;
-    background: var(--negro);
-    color: var(--blanco);
-}
-/* fin menu desplegable */
-
-.submenu1 li {
-    padding: 20px 10px 20px 10px;
-}
-
-.submenu2 li {
-    padding: 20px 10px 20px 10px; 
-}
-
-.submenu1 a {
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.submenu2 a {
-    padding: 5px;
-    border-radius: 5px;
-}
 
 /* ------------- BOTONES ------------ */
 /* ---------------------------------- */
@@ -182,17 +156,15 @@ nav > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    margin-right: 60px;
+    gap: 25px;
 }
 
 /* Botón Inicio de Sesión */
-
 .btn1 {
     padding: 8px 10px 8px 10px;
     border-radius: 10px;
     background: var(--blanco);
-    border: 2px solid var(--gris);
+    border: 2px solid var(--blanco);
 }
 
 .btn1 a {
@@ -204,6 +176,7 @@ nav > ul {
 
 .btn1:hover {
     background: var(--celeste);
+    border: 2px solid var(--celeste);
 }
 
 .btn1 a:hover {
@@ -212,12 +185,11 @@ nav > ul {
 }
 
 /* Botón de creación de cuenta */
-
 .btn2 {
     padding: 8px 10px 8px 10px;
     border-radius: 10px;
-    background: var(--celeste);
-    border: 2px solid var(--gris);
+    background: var(--rojo);
+    border: 2px solid var(--rojo);
 }
 
 .btn2 a {
@@ -228,19 +200,191 @@ nav > ul {
 }
 
 .btn2:hover {
-    background: var(--blanco);
+    opacity: .7;
 }
 
 .btn2 a:hover {
-    color: var(--negro);
+    color: var(--blanco1);    
 }
 
-/* 
+/*
 página con muestras de botones para desarrollar:
 https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-sitios-web-creados-con-divi/
 */
 
+/* ************** FOTO PORTADA ************** */
+/* ****************************************** */
 
+.portadaContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 5px 40px 0;
+    overflow: hidden;
+    /* sombra de la imagen */
+    box-shadow: 5px 8px 12px var(--negro);
+}
+
+.portadaImg {
+    width: 100%;
+    height: auto;
+}
+
+/* Titulo sobre la imagen */
+.portadaTitulo {
+    display: flex;
+    justify-content: space-between;
+    gap: 17px;
+    font-size: 40px;
+    color: var(--negro);
+    font-weight: 1000;
+    /* Posición sobre la imagen */
+    position: absolute;
+    top: 60%;
+    left: 7%;
+}
+
+.portadaTitulo img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;    
+}
+
+/* texto sobre la imagen */
+.portadaContenido p {
+    font-size: 30px;
+    color: var(--negro);
+    font-weight: 700;
+    /* posición del texto sobre imagen */
+    position: absolute;
+    top: 77%;
+    left: 7%;
+
+}
+
+
+/* ******************* CARDS *************** */
+/* ****************************************** */
+
+/* Títulos de sección */
+
+h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0 0 -20px 65px;
+    font-size: 45px;
+    color: var(--negro);
+    font-weight: 900;
+}
+
+/* ****************** */
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px 70px;
+    padding: 100px 30px 60px 30px;
+    /* borde container cards */
+    border-radius: 45px;
+    margin: 25px;
+    background: rgba(149, 102, 238, 0.4);
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: var(--blanco);
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .imagenCard {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: var(--celeste);
+    border-radius: 12px;
+    overflow: hidden; 
+    transition: 0.5s;   
+}
+
+.container .card:hover .imagenCard {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imagenCard img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* tamaño de relleno de la imagen en el contenedor */
+}
+
+.container .card .contenido {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .contenido {
+    top: 130px;
+    height: 250px;
+}
+
+.container .card .contenido h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.container .card .contenido p {
+    color: var(--negro);
+}
+
+/* ************* BOTÓN CARDS ***************  */
+/* ****************************************** */
+
+.container .card .contenido a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--azul);
+    /* verificar colores según el patrón de diseño  */
+    color: var(--blanco);
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.container .card .contenido a:hover {
+    opacity: 0.8;
+}
+
+/* FALTA EL DISEÑO RESPONSIVE */
+
+/* ************* Fin de Cards *************** */
+/* ****************************************** */
 
 
 /* ******************* FOOTER *************** */
@@ -248,37 +392,85 @@ https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-si
 
 footer {
     width: 100%;
-    height: 230px;
-    background-image: url("../img/ola.svg");
-    position: absolute;
-    margin: auto;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-h5 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    position: relative;
+    left: 0;
+    bottom: 0;
     color: var(--blanco);
-    font-size: 35px;
-    font-family: "Montserrat", sans-serif;
-    margin: 10px auto 15px auto;
+    margin-top: -60px;
 }
 
-.iconos_footer {
+.foorteFondo {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+ul {
     display: flex;
-    justify-content: center;
-    font-size: 45px;
-    margin-bottom: 30px;
-    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 99;
+}
+
+.redesSociales {
+    gap: 25px;
+}
+
+.redesSociales a {
+    color: var(--blanco);
+    font-size: 27px; 
+    /* tamaño de los iconos en footer */
+}
+
+.navegacionFooter {
+    gap: 15px;
+    font-size: 17px;
+    z-index: 99;
+}
+
+.navegacionFooter li a {
+    color: var(--blanco);
 }
 
 .copyright {
+    font-size: 12px;
+    margin: 0;
+    z-index: 99;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(3) scaleX(2.25);
+    transform-origin: bottom;
+    box-sizing: border-box;
+    display: block;
+    pointer-events: none;
+}
+
+article {
     display: flex;
-    justify-content: center;
-    color: var(--blanco);
-    font-family: "Montserrat", sans-serif;
-} 
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: -110px;
+}
+
+/* *********************************************** */
+/* ****************** RESPONSIVE ***************** */
+/* *********************************************** */
+
+/* Mínimo tres puntos de corte (breakpoints) */
+
