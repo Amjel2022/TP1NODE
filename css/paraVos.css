@@ -2,9 +2,14 @@
 * {
     margin: 0;
     padding: 0;
+}
+html{
+    font-size: 62.5%;
     box-sizing: border-box;
 }
-
+body{
+    font-size: 1.6rem;
+}
 ul, ol {
     list-style-type: none;
     
@@ -32,5 +37,71 @@ a, li {
 
 body {
     background-color: var(--blanco);
-     
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1,h2{
+    text-align: center;
+}
+/*******************Servicios****************************/
+.cta_digital{
+    height: 49rem;
+    min-width: 100%;
+}
+.servicios_contenedor{
+    margin-bottom: 5rem;
+    height: 100%;
+    max-width: 100%;
+    /* background-color: yellow; */
+}
+.servicios_titulo{
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+.servicios_grid{
+    /* background-color: blue; */
+    display: grid;
+    /* gap: 2rem; */
+    /* padding: 2rem 0; */
+    border: 1px solid #5555;
+    border-radius: 7px;
+    max-width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+/* @media (min-width: 600px) {
+    .servicios_grid{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 80%;
+    }
+} */
+.servicio{
+    display: flex;
+    /* background-color: grey; */
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 0.5rem;
+}
+.servicio__logo{
+    background-color: var(--verde_claro);
+    border-radius: 100%;
+    width: 15%;
+    text-align: center;
+    padding: 0.7rem;
+    margin-left: 1rem;
+}
+.servicio__contenido{
+    width: 85%;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.3rem;
 }
