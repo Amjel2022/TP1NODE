@@ -446,7 +446,7 @@ ul {
     z-index: 99;
 }
 
-svg {
+.svgFooter {
     position: absolute;
     top: 0;
     left: 0;
@@ -457,6 +457,7 @@ svg {
     box-sizing: border-box;
     display: block;
     pointer-events: none;
+    
 }
 
 article {
