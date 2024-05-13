@@ -103,9 +103,9 @@
 
     <main>
         <!-- Cuerpo principal de la página -->
-        <h1> Abrí tu cuenta</h1>
-            <form action="">
-                <h2>Datos personales</h2>
+        
+            <form id="form">
+                <h2>Registrate</h2>
 
                 Uso de la cuenta
                 <div id="radio">
@@ -113,11 +113,14 @@
                     <input type="radio" name="opcion" id="empresarial"><p>Empresarial</p>
                 </div>
 
-                <label for="nombre">Nombre</label>
+                <label for="nombre">Nombres</label>
                 <input type="text" name="nombre" id="nombre">
+                <div class="error"></div>
+
 
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido" id="apellido">
+                <div class="error error1"></div>
 
                 Género
                 <select name="" id="">
@@ -128,6 +131,7 @@
 
                 <label for="dni">DNI</label>
                 <input type="number" name="dni" id="dni">
+                <div class="error error2"></div>
 
                 <label for="nacimiento">Fecha de nacimiento</label>
                 <input type="date" name="nacimiento" id="nacimiento">
@@ -135,13 +139,16 @@
                 <label for="usuario">Email</label>
                 <input type="email" name="usuario" id="usuario">
 
+
                 <label for="contraseña">Contraseña</label>
                 <input type="password" name="contraseña" id="contraseña">
+                <div class="error error3"></div>
+
 
                 <label for="foto">Imagen de perfil</label>
                 <input type="file" name="foto" id="foto"> 
 
-                <button class="boton" type="submit">Registrar</button>
+                <button class="btn2" type="submit">Registrar</button>
                 
 
                 
@@ -237,6 +244,6 @@
         <!-- ************************************************ -->
     </footer>
     <!-- ********************** FIN DE FOOTER ************************************** -->
-
+<script src="../scripts/abrir_cuenta.js"></script>
 </body>
 </html>

@@ -50,9 +50,9 @@ form{
     justify-content:space-between;
 
     border:1px ;
-    border-radius:10% 10% 10% 10%;
+    border-radius:5% 5% 5% 5%;
 
-    font-size: 25px;
+    font-size: 20px;
     border-style: solid;
     border-color: #1b1b1b;
     padding: 2vw;
@@ -60,7 +60,10 @@ form{
     width: 40%;
 
 }
-
+.error{
+    color: red;
+    font-size: 15px;
+}
 h1,h2{
     color: #393c80;
     font-size: 40px;
@@ -73,16 +76,7 @@ input{
 label{
     margin-top: 3vh;
 }
-.boton{
-    margin: 1vh;
-    padding: 2vh;
-    font-size: 20px;
-    background-color: #393c80;
-    color: white;
-    border-radius: 50% 50% 50% 50%;
-    border: none;
-    align-self: center;
-}
+
 #radio{
     display: flex;
     flex-direction: row;
