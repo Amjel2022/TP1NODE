@@ -57,11 +57,11 @@
                         </a>   
                         <ul class="navbarDesplegable">
                             <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Personas</a> </li>
-                            <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Cuenta digital</a> </li>
-                            <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Tarjeta virtual</a> </li>
-                            <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Transferencias</a> </li>
-                            <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Pago de servicios</a> </li>
-                            <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Retiro de efectivo</a> </li>
+                            <li class="navbarItem"> <a href="#cuenta-digital" class="navbarLink navbarLink--inside">Cuenta digital</a> </li>
+                            <li class="navbarItem"> <a href="#tarjeta-virtual" class="navbarLink navbarLink--inside">Tarjeta virtual</a> </li>
+                            <li class="navbarItem"> <a href="#transferencias" class="navbarLink navbarLink--inside">Transferencias</a> </li>
+                            <li class="navbarItem"> <a href="#pago-servicios" class="navbarLink navbarLink--inside">Pago de servicios</a> </li>
+                            <li class="navbarItem"> <a href="#retiro-efectivo" class="navbarLink navbarLink--inside">Retiro de efectivo</a> </li>
                         </ul>
                     </li>
                     <!-- Menú desplegable 2 -->
@@ -93,93 +93,150 @@
         </nav>
     </header>
     <!-- ****************** Fin de encabezado y navegación ****************** -->
-    <main class="contenedor">
+    <main >
         <!-- Cuerpo principal de la página  -->
-        <section class="cta_digital">
-            <h1>Cuenta Digital</h1>
-        </section>
-        <section class="servicios_seccion">
-            <h2 class="servicios_titulo">
-                <span>Tu dinero siempre disponible</span>
-                para cuando lo necesites
-            </h2>
-            <div class="servicios_contenedor servicios_grid">
-                <div class="servicio">
-                    <div class="servicio__logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card"
-                            width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
-                            <path d="M3 10l18 0" />
-                            <path d="M7 15l.01 0" />
-                            <path d="M11 15l2 0" />
-                        </svg>
-                    </div>
-                    <div class="servicio__contenido">
-                        <p>tarjeta virtual</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.
-                        </p>
-                    </div>
+        <section class="cuenta_digital" id="cuenta-digital">
+            <div class="contenedor grid-cta-digital">
+                <div class=" cta-digital-card">
+                    <h1 class="cta-digital-card__title">La mejor opción para simplificar tu vida</h1>
+                    <p class="cta-digital-card__info">Abrí tu cuenta digital gratis y tené disponible tu dinero en todo momento, estés donde estés y con total seguridad. </p>
+                    <a class="cta-digital-card__btn" href="http://#">Abrir cuenta gratis</a>
                 </div>
-                <div class="servicio">
-                    <div class="servicio__logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-transfer" width="60"
-                            height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M20 10h-16l5.5 -6" />
-                            <path d="M4 14h16l-5.5 6" />
-                        </svg>
-                    </div>
-                    <div class="servicio__contenido">
-                        <p>transferencias</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-                <div class="servicio">
-                    <div class="servicio__logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-receipt-2"
-                            width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2" />
-                            <path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5m2 0v1.5m0 -9v1.5" />
-                        </svg>
-                    </div>
-                    <div class="servicio__contenido">
-                        <p>pago de servicios</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.
-                    </div>
-                </div>
-                <div class="servicio">
-                    <div class="servicio__logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coin" width="60"
-                            height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                            <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
-                            <path d="M12 7v10" />
-                        </svg>
-                    </div>
-                    <div class="servicio__contenido">
-                        <p>retiro de efectivo</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.
-                        </p>
-                    </div>
+                <div >
+                    <img class="cta-digital-img" src="../img/cta-digital.jpeg" alt="cuenta digital">
                 </div>
             </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <div class="contenedor">
+            <section class="servicios_seccion">
+                <h2 class="servicios_titulo">
+                    <span>Tu dinero siempre disponible</span>
+                    para cuando lo necesites
+                </h2>
+                <div class="servicios_contenedor servicios_grid">
+                    <div class="servicio">
+                        <div class="servicio__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card"
+                                width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+                                <path d="M3 10l18 0" />
+                                <path d="M7 15l.01 0" />
+                                <path d="M11 15l2 0" />
+                            </svg>
+                        </div>
+                        <div class="servicio__contenido">
+                            <p>tarjeta virtual</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="servicio">
+                        <div class="servicio__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-transfer" width="60"
+                                height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M20 10h-16l5.5 -6" />
+                                <path d="M4 14h16l-5.5 6" />
+                            </svg>
+                        </div>
+                        <div class="servicio__contenido">
+                            <p>transferencias</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="servicio">
+                        <div class="servicio__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-receipt-2"
+                                width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2" />
+                                <path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5m2 0v1.5m0 -9v1.5" />
+                            </svg>
+                        </div>
+                        <div class="servicio__contenido">
+                            <p>pago de servicios</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                        </div>
+                    </div>
+                    <div class="servicio">
+                        <div class="servicio__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coin" width="60"
+                                height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
+                                <path d="M12 7v10" />
+                            </svg>
+                        </div>
+                        <div class="servicio__contenido">
+                            <p>retiro de efectivo</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tarjeta-virtual" id="tarjeta-virtual">
+                <h2 class="tarjeta-virtual__titulo">Tú tarjeta en tú celular</h2>
+                <div class="tarjeta-virtual__info">
+                    <p>Obtenela 100% gratis al abrir tu cuenta y disfruta de todos sus beneficios.</p>
+                    <p>Accede a las mejores promos en toda la red de comercios asociados.</p>
+                    <p>Acumula puntos cada vez que la uses y canjelos por fabulosos premios.</p>
+                </div>
+                <div class="grid-img">
+                    <img class="tarjeta-virtual__img" src="../img/tarjeta-virtual-celu.png" alt="imagen tarjeta">
+                </div>
+                
+            </section>
+            <section class="transferencias" id="transferencias">
+                <h2 class="transferencias__titulo">Transferí al instante</h2>
+                <div class="transferencias__info">
+                    <p>Mové tu dinero gratis y sin demoras.</p>
+                    <p>Transferile a tus contactos, cuentas bancarias o billeteras virtuales.</p>
+                </div>
+                <div class="grid-img-invertido">
+                    <img class="transferencia__img" src="../img/transferencia.png" alt="imagen transferencia">
+                </div>
+            </section>
+            <section class="pago-servicios" id="pago-servicios">
+                <h2 class="pago-servicios__titulo">Tus pagos y recargas desde un solo lugar</h2>
+                <div>
+                    <h3 class="pago-servicios__subtitulo">Servicios</h3>
+                    <div class="pago-servicios__info">
+                        <p>Pagá tus facturas de manera 100% segura y mantene tus cuentas al día.</p>
+                        <p>Agendá los servicios que quieras y definí alertas para que no pierdas ningún vencimiento.</p>
+                    </div>
+                    <h3 class="pago-servicios__subtitulo">Recargas</h3>
+                    <div class="pago-servicios__info">
+                        <p>Recargá en el momento tu linea de celuar, tu tarjeta de transporte o el servicios de peaje.</p>
+                        <p>También podes programar tus recargas con rapidez y agilidad</p>
+                    </div>
+                </div>
+                <div class="grid-img">
+                    <img class="pago-servicios__img" src="../img/pagar-movil.png" alt="imagen recarga">
+                </div>                
+            </section>
+            <section class="retiro-efectivo" id="retiro-efectivo">
+                <h2 class="retiro-efectivo__titulo">Retiro de efectivo</h2>
+                <div class="retiro-efectivo__info">
+                    <p>Retirá dinero con tu celuar en cualquier sucursal de Rapipago o PagoFacil.</p>
+                    <p>Y en la red de comercios adheridos con código QR.</p>
+                </div>
+                <div class="grid-img-invertido">
+                    <img class="retiro-efectivo__img" src="../img/efectivo.png" alt="imagen retiro efectivo">
+                </div>
+            </section>
+        </div>
     </main>
     <!-- ***************** FOOTER ******************************** -->
     <footer>
