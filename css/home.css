@@ -216,7 +216,32 @@ h2 {
 /* ****************** RESPONSIVE ***************** */
 /* *********************************************** */
 
+
 @media (max-width: 768px) {
+    /* ----------- Imagen de Portada ------------ */
+    .portadContainer {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .portadaTitulo {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 20px;
+        
+    }
+
+    .portadaContenido p {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .portadaTitulo img {
+        width: 25%;
+        height: auto;
+        
+    }
+    
+    /* ----------- Responsive CARDS ------------- */
     .container .card .imagenCard img {
         padding: 15px;
         background: var(--blanco);
