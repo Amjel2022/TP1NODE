@@ -1,201 +1,294 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para tu Negocio</title>
-    <!-- Link de CSS para navbar y footer -->
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- ********************************* -->
-    
     <!-- ********** Link de estilos de la página *************** -->
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/paraNegocio.css">
     <!-- **************************************************** -->
-    
     <!-- FUENTES -->
     <!-- Link de la fuente: Plus Jakarta Sans (títulos) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
     <!-- Link de la fuente: Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
     <!-- Link de la fuente: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
     <!-- ******************************************************** -->
-    
     <!-- Link de iconos de redes sociales -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ********************************************************** -->
-
     <!-- Link del icono -->
     <link rel="icon" href="../img/Logos/logo.png">
 </head>
+
 <body>
-    
     <!-- ****************** Encabezado y navegación ****************** -->
     <nav class="menuNav">
-        <section class="navbarContainer">   
-                <!-- LOGO -->
-              <div class="navbarLogo">
-                  <a href="../index.html"> <img src="../img/Logos/logo.png" alt="Logo"></a>
-              </div>
-              
-              <!-- Menú de navegación -->
-              <ul class="navbarLinks">
-                  <li class="navbarItem">
-                    <a href="../index.html" class="navbarLink">Inicio</a>  
-                  </li>  
-                  <!-- Menú desplegable 1 -->
-                  <li class="navbarItem navbarItem--show">
-                      <a href="##" class="navbarLink">Para vos 
+        <section class="navbarContainer">
+            <!-- LOGO -->
+            <div class="navbarLogo">
+                <a href="../index.html"> <img src="../img/Logos/logo.png" alt="Logo"></a>
+            </div>
+            <!-- Menú de navegación -->
+            <ul class="navbarLinks">
+                <li class="navbarItem">
+                    <a href="../index.html" class="navbarLink">Inicio</a>
+                </li>
+                <!-- Menú desplegable 1 -->
+                <li class="navbarItem navbarItem--show">
+                    <a href="##" class="navbarLink">Para vos
                         <img src="../img/flecha.svg" alt="flecha menu desplegable" class="navbarFlecha">
-                      </a>   
-                      <ul class="navbarDesplegable">
-                          <li class="navbarItem"> <a href="../pages/paraVos.html" class="navbarLink navbarLink--inside">Personas</a> </li>
-                          <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Cuenta digital</a> </li>
-                          <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Tarjeta virtual</a> </li>
-                          <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Transferencias</a> </li>
-                          <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Pago de servicios</a> </li>
-                          <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Retiro de efectivo</a> </li>
-                      </ul>
-                  </li>
-                  <!-- Menú desplegable 2 -->
-                  <li class="navbarItem navbarItem--show">
-                    <a href="##" class="navbarLink">Para tu negocio 
-                      <img src="../img/flecha.svg" alt="flecha menu desplegable" class="navbarFlecha">
-                    </a> 
-                      <ul class="navbarDesplegable">
-                          <li class="navbarItem"> <a href="../pages/paraNegocio.html" class="navbarLink navbarLink--inside">Negocios</a> </li>
-                          <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Ventas</a> </li>
-                          <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Suscripción</a> </li>
-                          <li class="navbarItem"> <a href="#" class="navbarLink navbarLink--inside">Comercios</a> </li>
-                      </ul>
-                  </li>
-              </ul>
-          <!-- ************************ -->
-          
-          <!-- Botones de lasSesiones -->
+                    </a>
+                    <ul class="navbarDesplegable">
+                        <li class="navbarItem"> <a href="../pages/paraVos.html"
+                                class="navbarLink navbarLink--inside">Personas</a> </li>
+                        <li class="navbarItem"> <a href="./paraVos.html#cuenta-digital"
+                                class="navbarLink navbarLink--inside">Cuenta digital</a>
+                        </li>
+                        <li class="navbarItem"> <a href="./paraVos.html#tarjeta-virtual"
+                                class="navbarLink navbarLink--inside">Tarjeta virtual</a>
+                        </li>
+                        <li class="navbarItem"> <a href="./paraVos.html#transferencias"
+                                class="navbarLink navbarLink--inside">Transferencias</a>
+                        </li>
+                        <li class="navbarItem"> <a href="./paraVos.html#pago-servicios"
+                                class="navbarLink navbarLink--inside">Pago de servicios</a>
+                        </li>
+                        <li class="navbarItem"> <a href="./paraVos.html#retiro-efectivo"
+                                class="navbarLink navbarLink--inside">Retiro de efectivo</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Menú desplegable 2 -->
+                <li class="navbarItem navbarItem--show">
+                    <a href="##" class="navbarLink">Para tu negocio
+                        <img src="../img/flecha.svg" alt="flecha menu desplegable" class="navbarFlecha">
+                    </a>
+                    <ul class="navbarDesplegable">
+                        <li class="navbarItem"> <a href="../pages/paraNegocio.html"
+                                class="navbarLink navbarLink--inside">Negocios</a> </li>
+                        <li class="navbarItem"> <a href="#forma-cobro" class="navbarLink navbarLink--inside">Formas de Cobro</a>
+                        </li>
+                        <li class="navbarItem"> <a href="#tarjetas" class="navbarLink navbarLink--inside">Tarjetas</a> </li>
+                        <li class="navbarItem"> <a href="#cuenta-digital" class="navbarLink navbarLink--inside">Cuenta Digital</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- ************************ -->
+            <!-- Botones de lasSesiones -->
             <div class="sesiones">
                 <button class="btn1"> <a href="../pages/inicio_sesion.html">Iniciar sesión</a> </button>
                 <button class="btn2"> <a href="../pages/abrir_cuenta.html">Abrir cuenta gratis</a> </button>
             </div>
-          <!-- ********************** -->
-          
-          <!-- ****** MENÚ HAMBURGUESA ****** -->
-          <div class="navbarHambur">
-            <img src="../img/menu.svg" alt="Menu" class="navbarImg">
-          </div>
-          <!-- ****************************** -->
-          
+            <!-- ********************** -->
+            <!-- ****** MENÚ HAMBURGUESA ****** -->
+            <div class="navbarHambur">
+                <img src="../img/menu.svg" alt="Menu" class="navbarImg">
+            </div>
+            <!-- ****************************** -->
         </section>
     </nav>
     <!-- ****************** Fin de encabezado y navegación ****************** -->
-
-    </header>
-    <!-- ****************** Fin de encabezado y navegación ****************** -->
-
     <main>
         <!-- Cuerpo principal de la página  -->
-        <h1>Página para negocios </h1>
+        <section class="cta_comercio" id="cuenta-comercio">
+            <div class="contenedor grid-cta-comercio">
+                <div class=" cta-comercio-card">
+                    <h1 class="cta-comercio-card__title">Gestiona tus cobros como vos elijas.</h1>
+                    <p class="cta-comercio-card__info">Vendé como quieras, sin contratos ni gastos fijos.</p>
+                    <p class="cta-comercio-card__info">Las mejores opciones a tu alcance.</p>
+                    <a class="cta-comercio-card__btn" href="http://#">Abrir cuenta gratis</a>
+                </div>
+                <div>
+                    <img class="cta-comercio-img" src="../img/comercio.png" alt="cuenta comercio">
+                </div>
+            </div>
+        </section>
+        <div class="contenedor">
+            <section class="servicios_seccion" id="forma-cobro">
+                <h2 class="servicios_titulo">
+                    Cobrá de la forma que mejor se adapte a tu negocio
+                </h2>
+                <div class="servicios_contenedor servicios_grid">
+                    <div class="servicio">
+                        <div class="servicio__logo">
+                            <img class="servicio__img" src="../img/terminal-pos.png" alt="">
+                        </div>
+                        <div class="servicio__contenido">
+                            <h4>Lectores Point</h4>
+                            <p>LLevalos con vos y cobrá donde sea sin pagar el costo de alquiler.</p>
+                        </div>
+                    </div>
+                    <div class="servicio">
+                        <div class="servicio__logo">
+                            <img class="servicio__img" src="../img/qr.png" alt="">
+                        </div>
+                        <div class="servicio__contenido">
+                            <h4>Código QR</h4>
+                            <p>Lo imprimís y lo usás hoy mismo. O generalo en el momento en tu terminal.</p>
+                        </div>
+                    </div>
+                    <div class="servicios_grid--full">
+                        <div class="servicio servicio--mod">
+                            <div class="servicio__logo">
+                                <img class="servicio__img" src="../img/LinkDePago.png" alt="">
+                            </div>
+                            <div class="servicio__contenido">
+                                <h4>Link de Pago</h4>
+                                <p>Recibí los pagos desde cualquier lugar del país por chat o redes sociales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="medios-de-pago" id="tarjetas">
+                <h2 class="medios-de-pago__titulo">Aceptá los medios de pagos mas usados</h2>
+                <div class="medios-de-pago__imagenes">
+                    <div class="contenedor-img-tarjeta">
+                        <img class="img-tarjeta" src="../img/img-tarjetas/visa-icon--c948b270.png" alt=" tarjeta visa">
+                    </div>
+                    <div class="contenedor-img-tarjeta">
+                        <img class="img-tarjeta" src="../img/img-tarjetas/master-icon--f02ed8c0.png"
+                            alt="tarjeta mastercard">
+                    </div>
+                    <div class="contenedor-img-tarjeta">
+                        <img class="img-tarjeta" src="../img/img-tarjetas/mla-payments-amex--623f5670.png"
+                            alt="tarjeta amex">
+                    </div>
+                    <div class="contenedor-img-tarjeta">
+                        <img class="img-tarjeta" src="../img//img-tarjetas/cabal-icon--650cf2c0.png"
+                            alt="tarjeta cabal">
+                    </div>
+                    <div class="contenedor-img-tarjeta">
+                        <img class="img-tarjeta" src="../img/img-tarjetas/mla-payments-bna-icon--0f617180.png"
+                            alt="tarjeta bna">
+                    </div>
+                    <div class="contenedor-img-tarjeta">
+                        <img class="img-tarjeta" src="../img/img-tarjetas/mla-payments-diners-icon--6e1ec6f0.png"
+                            alt="tarjeta diners">
+                    </div>
+                    <div class="contenedor-img-tarjeta">
+                        <img class="img-tarjeta" src="../img/img-tarjetas/mla-payments-mercadopago-icon--f4ddef10.png"
+                            alt="mercadopago">
+                    </div>
+                    <div class="contenedor-img-tarjeta">
+                        <img class="img-tarjeta" src="../img/img-tarjetas/mla-payments-modo-icon--c4499de0.png"
+                            alt="modo">
+                    </div>
+                    <div class="contenedor-img-tarjeta">
+                        <img class="img-tarjeta" src="../img/img-tarjetas/mla-payments-uala-icon--52f00f60.png"
+                            alt="uala">
+                    </div>
+                    <div class="contenedor-img-tarjeta">
+                        <img class="img-tarjeta" src="../img/img-tarjetas/planZ-icon--c0cfa800.png" alt="naranja planZ">
+                    </div>
+                </div>
+            </section>
+            <section class="cuenta-negocio" id="cuenta-digital">
+                <h2 class="cuenta-negocio__titulo">Una cuenta digital para usar tu dinero</h2>
+                <div class="cuenta-negocio__contenido">
+                    <div class="cuenta-negocio__info">
+                        <div class="cuenta-negocio__card">
+                            <p>Accedé a una Tarjeta para comprar o sacar dinero en cualquier parte del
+                                mundo..</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M 12 2 C 6.5 2 2 6.5 2 12 C 2 17.5 6.5 22 12 22 C 17.5 22 22 17.5 22 12 C 22 10.9 21.8 9.8007812 21.5 8.8007812 L 19.800781 10.400391 C 19.900781 10.900391 20 11.4 20 12 C 20 16.4 16.4 20 12 20 C 7.6 20 4 16.4 4 12 C 4 7.6 7.6 4 12 4 C 13.6 4 15.100391 4.5007812 16.400391 5.3007812 L 17.800781 3.9003906 C 16.200781 2.7003906 14.2 2 12 2 z M 21.300781 3.3007812 L 11 13.599609 L 7.6992188 10.300781 L 6.3007812 11.699219 L 11 16.400391 L 22.699219 4.6992188 L 21.300781 3.3007812 z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="cuenta-negocio__card">
+                            <p>Transferí tu dinero a cuentas bancarias o a otras cuentas digitales</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M 12 2 C 6.5 2 2 6.5 2 12 C 2 17.5 6.5 22 12 22 C 17.5 22 22 17.5 22 12 C 22 10.9 21.8 9.8007812 21.5 8.8007812 L 19.800781 10.400391 C 19.900781 10.900391 20 11.4 20 12 C 20 16.4 16.4 20 12 20 C 7.6 20 4 16.4 4 12 C 4 7.6 7.6 4 12 4 C 13.6 4 15.100391 4.5007812 16.400391 5.3007812 L 17.800781 3.9003906 C 16.200781 2.7003906 14.2 2 12 2 z M 21.300781 3.3007812 L 11 13.599609 L 7.6992188 10.300781 L 6.3007812 11.699219 L 11 16.400391 L 22.699219 4.6992188 L 21.300781 3.3007812 z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="cuenta-negocio__card">
+                            <p>Operá con tranquilidad, monitoreamos tus pagos las 24 horas del día.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M 12 2 C 6.5 2 2 6.5 2 12 C 2 17.5 6.5 22 12 22 C 17.5 22 22 17.5 22 12 C 22 10.9 21.8 9.8007812 21.5 8.8007812 L 19.800781 10.400391 C 19.900781 10.900391 20 11.4 20 12 C 20 16.4 16.4 20 12 20 C 7.6 20 4 16.4 4 12 C 4 7.6 7.6 4 12 4 C 13.6 4 15.100391 4.5007812 16.400391 5.3007812 L 17.800781 3.9003906 C 16.200781 2.7003906 14.2 2 12 2 z M 21.300781 3.3007812 L 11 13.599609 L 7.6992188 10.300781 L 6.3007812 11.699219 L 11 16.400391 L 22.699219 4.6992188 L 21.300781 3.3007812 z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cuenta-negocio__div-img">
+                        <img class="cuenta-negocio__img" src="../img/cuenta-digital.jpeg" alt="imagen retiro efectivo">
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-
     <!-- ***************** FOOTER ******************************** -->
     <footer>
-            
         <div class="footerFondo">
-            <svg
-              class="svgFooter"  
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="100%"
-              height="100%"
-              viewBox="0 0 1600 900"
-            >
-              <defs>
-                <path
-                  id="wave"
-                  fill="rgba(105, 27, 252, 0.6)"
-                  d="M-363.852,502.589c0,0,236.988-41.997,505.475,0s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
-                />
-              </defs>
-              <g>
-                <use xlink:href="#wave" opacity=".4">
-                  <animateTransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    type="translate"
-                    dur="8s"
-                    calcMode="spline"
-                    values="270 230; -334 180; 270 230"
-                    keyTimes="0; .5; 1"
-                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-                    repeatCount="indefinite"
-                  />
-                </use>
-                <use xlink:href="#wave" opacity=".6">
-                  <animateTransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    type="translate"
-                    dur="6s"
-                    calcMode="spline"
-                    values="-270 230;243 220;-270 230"
-                    keyTimes="0; .6; 1"
-                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-                    repeatCount="indefinite"
-                  />
-                </use>
-                <use xlink:href="#wave" opacty=".9">
-                  <animateTransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    type="translate"
-                    dur="4s"
-                    calcMode="spline"
-                    values="0 230;-140 200;0 230"
-                    keyTimes="0; .4; 1"
-                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-                    repeatCount="indefinite"
-                  />
-                </use>
-              </g>
+            <svg class="svgFooter" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%"
+                viewBox="0 0 1600 900">
+                <defs>
+                    <path id="wave" fill="rgba(105, 27, 252, 0.6)"
+                        d="M-363.852,502.589c0,0,236.988-41.997,505.475,0s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+                </defs>
+                <g>
+                    <use xlink:href="#wave" opacity=".4">
+                        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s"
+                            calcMode="spline" values="270 230; -334 180; 270 230" keyTimes="0; .5; 1"
+                            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+                    </use>
+                    <use xlink:href="#wave" opacity=".6">
+                        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s"
+                            calcMode="spline" values="-270 230;243 220;-270 230" keyTimes="0; .6; 1"
+                            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+                    </use>
+                    <use xlink:href="#wave" opacty=".9">
+                        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="4s"
+                            calcMode="spline" values="0 230;-140 200;0 230" keyTimes="0; .4; 1"
+                            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+                    </use>
+                </g>
             </svg>
-          </div>
+        </div>
         <!-- ************* Iconos de redes ******************* -->
-          <article>
+        <article>
             <ul class="redesSociales">
-              <li><a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a></li>
-              <li><a href="https://www.facebook.com/" class="fa-brands fa-facebook"></a></li>
-              <li><a href="https://twitter.com/?lang=es" class="fa-brands fa-x-twitter"></a></li>
-              <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin"></a></li>
+                <li><a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a></li>
+                <li><a href="https://www.facebook.com/" class="fa-brands fa-facebook"></a></li>
+                <li><a href="https://twitter.com/?lang=es" class="fa-brands fa-x-twitter"></a></li>
+                <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin"></a></li>
             </ul>
-        
-        <!-- **************** Navegacion ******************** -->
+            <!-- **************** Navegacion ******************** -->
             <ul class="navegacionFooter">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../pages/paraVos.html">Personas</a></li>
-              <li><a href="../pages/paraNegocio.html">Negocios</a></li>
-              <li><a href="../pages/inicio_sesion.html">Sesión</a></li>
-              <li><a href="../pages/abrir_cuenta.html">Registrarse</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/paraVos.html">Personas</a></li>
+                <li><a href="../pages/paraNegocio.html">Negocios</a></li>
+                <li><a href="../pages/inicio_sesion.html">Sesión</a></li>
+                <li><a href="../pages/abrir_cuenta.html">Registrarse</a></li>
             </ul>
             <p class="copyright">© 2024 Codos Design</p>
-          </article>
+        </article>
         <!-- ************************************************ -->
     </footer>
     <!-- ********************** FIN DE FOOTER ************************************** -->
-
 </body>
+
 </html>
