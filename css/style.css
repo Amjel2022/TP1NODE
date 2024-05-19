@@ -299,5 +299,26 @@ article {
 /* ****************** RESPONSIVE ***************** */
 /* *********************************************** */
 
-/* Mínimo tres puntos de corte (breakpoints) */
+
+
+@media (max-width: 768px) {
+    /* -------------- NAVBAR RESPONSIVE -------------- */
+    
+
+    
+    /* -------------- FOOTER RESPONSIVE -------------- */
+    footer {
+        margin-top: 40px;
+    }
+    
+    .footerFondo {
+        margin-top: -100px;    
+    }
+    .navegacionFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}
 

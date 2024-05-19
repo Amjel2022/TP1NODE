@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 ul, ol {
@@ -59,31 +60,21 @@ form{
 
 }
 h1{
-    color: #393c80;
+    color: var(--negro);
     font-size: 40px;
 }
 input{
     width: 100%;
     height: 30px;
 }
-#ingresar{
-    margin: 1vh;
-    padding: 2vh;
-    font-size: 20px;
-    background-color: #393c80;
-    color: white;
-    border-radius: 50% 50% 50% 50%;
-    border: none;
-}
+
 #registrarse{
     font-size: 15px;
 }
 input:hover{
-    border-color: #4a85fa;
+    border-color: var(--gris);
 }
-#ingresar:hover{
-    color: #1b1b1b;
-}
+
 @media screen and (max-width:600px) {
     main{
         flex-direction: column;
