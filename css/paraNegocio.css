@@ -2,9 +2,17 @@
 * {
     margin: 0;
     padding: 0;
+}
+html{
+    font-size: 62.5%;
     box-sizing: border-box;
 }
-
+body{
+    font-size: 1.6rem;
+    background: var(--blanco2); 
+    height: 100%;
+    font-family: "Euclid Circular A", "Poppins";
+}
 ul, ol {
     list-style-type: none;
     
@@ -20,6 +28,7 @@ a, li {
 /* PALETA DE COLORES */
 :root {
     --blanco: #fcfcf7;
+    --blanco2: rgb(226, 234, 240);
     --azul: #6266f5;
     --verde_claro: #67d7e7;
     --rojo: #ff5a82;
@@ -29,8 +38,294 @@ a, li {
 }
 
 /* ***************************************************** */
-
-body {
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+h1,h2{
+    text-align: center;
+}
+/*******************Servicios****************************/
+.cta_comercio{
+    height: 90%;
+    width: 100%;
+    margin-bottom: 6rem;
+    background:linear-gradient(rgba(149, 102, 238, 0.4), 60%, transparent);
+}
+.cta-comercio-card{
+    margin-bottom: 4rem;
+}
+.cta-comercio-card__title{
+    color: var(--blanco);
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 3rem;
+}
+.cta-comercio-card__info{
+    display: none;
+}
+.cta-comercio-card__btn{
+    display: block;
     background-color: var(--blanco);
-     
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--rojo);
+}
+@media (min-width: 768px) {
+    .grid-cta-comercio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 5rem;
+        height: 100%;
+        padding-top: 4rem;
+    }
+    .cta-comercio-card__title{
+        width: 90%;
+        font-size: 5rem;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+    .cta-comercio-card__info{
+        display: block;
+        width: 80%;
+        font-size: 1.8rem;
+        color: var(--gris);
+        text-align: justify;
+        /* margin-bottom: 4rem; */
+    }
+    .cta-comercio-card__btn{
+        display: block;
+        width: max-content;
+        margin-top: 4rem;
+    }
+}
+.cta-comercio-img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    color: var(--gris);
+}
+.servicios_seccion{
+    margin-bottom: 10rem;
+    height: 100%;
+    max-width: 100%;
+}
+.servicios_titulo{
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+@media (min-width: 728px) {
+    .servicios_titulo{
+        font-size: 3rem;
+    }
+}
+.servicios_contenedor{
+    box-shadow: 0 0 10px var(--gris);
+    border-radius: 7px;
+    max-width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    
+}
+@media (min-width: 728px) {
+    .servicios_contenedor{
+        border: none;
+        box-shadow: none;
+
+    }
+    .servicios_grid{
+        display: grid;
+        gap: 2rem;
+        padding: 2rem 0;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 80%;
+    }
+    .servicios_grid--full{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+.servicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .servicio--mod{
+        width: 50%;
+        height: 16rem;
+        margin: auto;
+    }
+}
+.servicio__logo{
+    width: 35%;
+    height: 100%;
+    text-align: center;
+}
+.servicio__img{
+    width: 70%;
+}
+.servicio__contenido{
+    width: 75%;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+@media (min-width: 728px) {
+    .servicio{
+        border-radius: 10px;
+        box-shadow: 0 0 10px var(--gris);
+    }
+    .servicio__logo{ 
+        width: 35%;
+        height: 100%;
+    }
+    .servicio__img{
+        width: 100%;
+        height: 15rem;
+        padding: 1rem;
+    }
+    .servicio__contenido{
+        width: 75%;
+        font-size: 1.6rem;
+        padding: 2rem;
+        margin-left: 1rem;
+    }
+}
+.medios-de-pago{
+    width: 100%;
+    height: max-content;
+    min-height: 40rem;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.medios-de-pago__titulo{
+    font-size: 2rem;
+    height: max-content;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 3px 4px var(--gris);
+}
+.medios-de-pago__imagenes{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 4rem 0;
+}
+.img-tarjeta{
+    width: 50%;
+}
+@media (min-width:768px ) {
+    .medios-de-pago{
+        margin-bottom: 3rem;
+    }
+    .medios-de-pago__titulo{
+        font-size: 3rem;
+        box-shadow: none;
+    }
+    .medios-de-pago__imagenes{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        row-gap: 2rem;
+        margin: 4rem 0;
+    }
+    .contenedor-img-tarjeta{
+        width: 15rem;
+        height: 8rem;
+        padding: 1rem;
+        margin: auto;
+        border: 2.5px solid var(--blanco);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-tarjeta{
+        width: 75%;
+    }
+}
+.cuenta-negocio{
+    width: 100%;
+    height: max-content;
+    min-height: 40rem;
+    text-align: left;
+    margin-bottom: 10rem;
+}
+.cuenta-negocio__titulo{
+    font-size: 2rem;
+    height: max-content;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 3px 4px var(--gris);
+}
+.cuenta-negocio__contenido{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    text-align: center;
+}
+.cuenta-negocio__info{
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.cuenta-negocio__card{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+}
+.cuenta-negocio__card p{
+    padding: 2rem;
+    width: 94%;
+}
+.cuenta-negocio__card svg{
+    width: 10%;
+}
+.cuenta-negocio__div-img{
+    grid-row: 1 / 2;
+}
+.cuenta-negocio__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+@media (min-width:768px ) {
+    .cuenta-negocio__titulo{
+        font-size: 3rem;
+        margin-bottom: 0;
+        box-shadow: none;
+    }
+    .cuenta-negocio__contenido{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 4rem;
+    }
+    .cuenta-negocio__info{
+        width: 60%;
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    .cuenta-negocio__card svg{
+        width: 6%;
+    }
+    .cuenta-negocio__div-img{
+        width: 40%;
+    }
+    .cuenta-negocio__img{
+        border-radius: 50px 50px 40% 0;
+    }
 }
