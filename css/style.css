@@ -106,6 +106,9 @@ body {
     --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     --transform: rotate(0); 
 }
+.navbarItem span:hover{
+    cursor: pointer;
+}
 /* --------------------------------- */
 
 .navbarLink {
